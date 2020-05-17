@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" fx:controller="photos.controller.openAlbumController" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button layoutX="38.0" layoutY="349.0" mnemonicParsing="false" text="&gt;" onAction="#next" />
+      <Button layoutX="14.0" layoutY="349.0" mnemonicParsing="false" text="&lt;" onAction="#prev" />
+      <Button layoutX="213.0" layoutY="349.0" mnemonicParsing="false" text="Add Photo" onAction="#upload" />
+      <Button layoutX="162.0" layoutY="350.0" mnemonicParsing="false" text="Delete" onAction="#delete" />
+      <Label layoutX="320.0" layoutY="222.0" text="Caption: " />
+      <TextField layoutX="374.0" layoutY="218.0" fx:id="textfield" />
+      <Label layoutX="320.0" layoutY="251.0" prefHeight="17.0" prefWidth="220.0" text="Date/Time" fx:id="dateLabel" />
+      <ListView layoutX="318.0" layoutY="291.0" prefHeight="71.0" prefWidth="237.0" fx:id="TagListView" />
+      <Label layoutX="318.0" layoutY="274.0" text="Tags" />
+      <Button layoutX="517.0" layoutY="361.0" mnemonicParsing="false" text="Add" onAction="#tagListAdd" />
+      <Button layoutX="320.0" layoutY="361.0" mnemonicParsing="false" text="Delete" onAction="#tagListdelete" />
+      <Button layoutX="72.0" layoutY="349.0" mnemonicParsing="false" text="Copy/Move" onAction="#copyMove" />
+      <Button layoutX="12.0" layoutY="1.0" mnemonicParsing="false" text="Home" onAction="#logout"  />
+      <Button layoutX="529.0" layoutY="218.0" mnemonicParsing="false" text="Confirm" onAction="#addRenameCaption" />
+      <TextField layoutX="436.0" layoutY="363.0" prefHeight="25.0" prefWidth="73.0" fx:id="tagAdd" />
+      <ImageView fitHeight="168.0" fitWidth="262.0" layoutX="317.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" fx:id="imageView" />
+      <ListView layoutX="14.0" layoutY="39.0" prefHeight="302.0" prefWidth="271.0" fx:id="ListView" />
+      <ComboBox layoutX="375.0" layoutY="362.0" prefHeight="25.0" prefWidth="48.0" fx:id="comboBox" />
+   </children>
+</Pane>
